@@ -10,21 +10,23 @@ import {
 import styles from './App.module.css';
 
 function App({
-               HomePage = () => 'home'
+               HomePage = () => 'home',
+               HooksPage = () => 'hooks',
+               ContactPage = () => 'contact'
              }) {
   return (
     <Router>
       <div className="container">
         <div className={styles.header}>
-          [ <Link to="/">News</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link> ]
+          [ <Link to="/">News</Link> | <Link to="/hooks">Hooks</Link> | <Link to="/contact">Contact</Link> ]
         </div>
 
         <Switch>
-          <Route path="/about">
-            About page...
+          <Route path="/hooks">
+            <HooksPage />
           </Route>
           <Route path="/contact">
-            Contact page...
+            <ContactPage />
           </Route>
           <Route path="/">
             <div className="row">
