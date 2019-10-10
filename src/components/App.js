@@ -9,7 +9,9 @@ import {
 
 import styles from './App.module.css';
 
-function App() {
+function App({
+               HomePage = () => 'home'
+             }) {
   return (
     <Router>
       <div className="container">
@@ -31,7 +33,7 @@ function App() {
           <Route path="/">
             <div className="row">
               <div className="col">
-                home
+                <HomePage />
               </div>
             </div>
           </Route>
