@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,11 +7,13 @@ import {
   Link
 } from "react-router-dom";
 
+import styles from './App.module.css';
+
 function App() {
   return (
     <Router>
       <div className="container">
-        <nav>
+        <nav className={styles.border}>
           <ul>
             <li>
               <Link to="/">home</Link>
