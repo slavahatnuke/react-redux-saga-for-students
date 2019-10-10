@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function News({ news = [] }) {
+export default function News({ articles = [] }) {
   return (<ul>
-    {news.map((post) => {
-      return <li key={post.id}>{post.xxxx}</li>
-    })}
+    {articles.map((article) => (
+      <li key={article.url}>{article.title}</li>
+    ))}
   </ul>)
 }

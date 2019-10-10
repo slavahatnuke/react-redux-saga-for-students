@@ -15,20 +15,16 @@ function App({
   return (
     <Router>
       <div className="container">
-        <nav className={styles.border}>
-          <ul>
-            <li>
-              <Link to="/">home</Link>
-            </li>
-            <li>
-              <Link to="/1">Page 1</Link>
-            </li>
-          </ul>
-        </nav>
+        <div className={styles.header}>
+          [ <Link to="/">News</Link> | <Link to="/1">Page 1</Link> | <Link to="/2">Page 2</Link> ]
+        </div>
 
         <Switch>
           <Route path="/1">
-            page 1
+            Page 1
+          </Route>
+          <Route path="/2">
+            Page 2
           </Route>
           <Route path="/">
             <div className="row">
