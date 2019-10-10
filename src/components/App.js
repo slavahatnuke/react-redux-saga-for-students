@@ -16,15 +16,15 @@ function App({
     <Router>
       <div className="container">
         <div className={styles.header}>
-          [ <Link to="/">News</Link> | <Link to="/1">Page 1</Link> | <Link to="/2">Page 2</Link> ]
+          [ <Link to="/">News</Link> | <Link to="/about">About</Link> | <Link to="/contact">Contact</Link> ]
         </div>
 
         <Switch>
-          <Route path="/1">
-            Page 1
+          <Route path="/about">
+            About page...
           </Route>
-          <Route path="/2">
-            Page 2
+          <Route path="/contact">
+            Contact page...
           </Route>
           <Route path="/">
             <div className="row">
@@ -34,7 +34,6 @@ function App({
             </div>
           </Route>
         </Switch>
-
       </div>
     </Router>
   );
