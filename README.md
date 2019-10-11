@@ -1,6 +1,6 @@
-# React redux app for students
+# React Redux app for students
 
-This is simple application for students that uses libs.
+This is simple application for students
 
 - React
 - Redux
@@ -8,8 +8,10 @@ This is simple application for students that uses libs.
 - Bootstrap
 - Sass
 - React Router
-- Function Components
+- React Function Components
+- React Hooks
 
+Contact me if any questions: [https://www.linkedin.com/in/slavahatnuke/](https://www.linkedin.com/in/slavahatnuke/)
 
 
 
